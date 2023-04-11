@@ -39,6 +39,7 @@ function Calculator() {
         <div className="calculator-input">
           <input id='inpt' type="text" value={inputValue} onChange={handleInputChange} />
         </div>
+        <div className='key-card'>
        <div className="calculator-keys">
           <button id='btn'  className="operator btn btn-info" onClick={() => handleClick('7')}>7</button>
           <button id='btn'  className="operator btn btn-info" onClick={() => handleClick('8')}>8</button>
@@ -62,12 +63,12 @@ function Calculator() {
         <button id='btn'  className="operator btn btn-info" onClick={() => handleClick('0')}>0</button>
         <button id='btn' className="operator btn btn-info" onClick={() => handleClick('.')}>.</button>
           <button id='btn'  className="operator btn btn-info" onClick={() => handleClick('C')}>C</button>
-        <button id='btn'  className="operator btn btn-info" onClick={() => handleClick('/')}>÷</button>
+        <button id='btn'  className="operator btn btn-info" onClick={() => handleClick('÷')}>÷</button>
         </div>
         <div className="calculator-keys">
         <button id='btnn'  className="operator btn btn-info" onClick={() => handleClick('=')}>=</button>
         </div>
-        
+        </div>
       </div>
       
     </>
